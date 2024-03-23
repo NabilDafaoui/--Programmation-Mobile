@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informations"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom: John Doe"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prénom: Jane"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDateNaissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date de naissance: 01/01/1990"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numéro de téléphone: +1234567890"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresse email: john.doe@example.com"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewInterets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Centres d'intérêt: Sport, Musique"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewSynchronisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synchronisation: Activée"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

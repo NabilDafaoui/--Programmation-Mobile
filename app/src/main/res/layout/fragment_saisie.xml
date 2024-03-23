@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulaire d'Inscription"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@color/purple_500"
+        android:padding="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre nom"
+                android:layout_below="@id/textViewNom"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewPrenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_below="@id/editTextNom"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextPrenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre prénom"
+                android:layout_below="@id/textViewPrenom"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewDateNaissance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_below="@id/editTextPrenom"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextDateNaissance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre date de naissance"
+                android:layout_below="@id/textViewDateNaissance"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numéro de téléphone"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_below="@id/editTextDateNaissance"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre numéro de téléphone"
+                android:layout_below="@id/textViewTelephone"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse email"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_below="@id/editTextTelephone"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre adresse email"
+                android:layout_below="@id/textViewEmail"
+                android:layout_marginTop="8dp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport"
+                android:layout_below="@id/editTextEmail"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxMusique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musique"
+                android:layout_below="@id/editTextEmail"
+                android:layout_toEndOf="@id/checkBoxSport"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxLecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecture"
+                android:layout_below="@id/editTextEmail"
+                android:layout_toEndOf="@id/checkBoxMusique"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupSynchronisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/checkBoxSport"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Synchroniser les données"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="8dp"/>
+
+                <Switch
+                    android:id="@+id/switchSynchronisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonSoumettre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soumettre"
+                android:layout_below="@id/radioGroupSynchronisation"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/buttonTelecharger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Télécharger"
+                android:layout_below="@id/radioGroupSynchronisation"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/buttonSoumettre"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

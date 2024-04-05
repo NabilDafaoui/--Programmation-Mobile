@@ -108,6 +108,16 @@ public class SaisieFragment extends Fragment {
 
         return view;
     }
+
+    public String getNom() {
+        return editTextNom.getText().toString();
+    }
+
+    // Méthode pour récupérer le prénom saisi
+    public String getPrenom() {
+        return editTextPrenom.getText().toString();
+    }
+
     private class DownloadFileFromURL extends AsyncTask<String, String, String> {
 
         @Override
